@@ -60,7 +60,7 @@ export default function Home() {
               <Image
                 src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
                 alt="AI Analysis"
-                width={600}
+                width={500}
                 height={300}
                 className="w-full h-full object-cover"
               />
@@ -75,7 +75,7 @@ export default function Home() {
               <Image
                 src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
                 alt="Real-time Processing"
-                width={600}
+                width={500}
                 height={300}
                 className="w-full h-full object-cover"
               />
@@ -90,7 +90,7 @@ export default function Home() {
               <Image
                 src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
                 alt="Automated Workflows"
-                width={600}
+                width={500}
                 height={300}
                 className="w-full h-full object-cover"
               />

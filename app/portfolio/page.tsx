@@ -53,7 +53,7 @@ export default function Portfolio() {
               Transforming Businesses with AI
             </h1>
             <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover how we&apos;ve helped businesses transform with cutting-edge AI solutions. Our portfolio showcases the
+              Discover how we've helped businesses transform with cutting-edge AI solutions. Our portfolio showcases the
               power of innovation in action.
             </p>
           </div>

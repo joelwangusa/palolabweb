@@ -2,7 +2,8 @@ import { Send } from "lucide-react"
 
 // Server Action for form submission
 async function submitForm(formData: FormData) {
-  "use server"
+  // "use server"
+  "use client"
 
   const name = formData.get("name")
   const email = formData.get("email")
@@ -31,7 +32,7 @@ export default function Contact() {
         </div>
 
         <div className="mt-12 max-w-lg mx-auto">
-          <form action={submitForm} className="grid grid-cols-1 gap-y-6">
+          <form className="grid grid-cols-1 gap-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-300">
                 Name

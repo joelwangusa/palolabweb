@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -56,9 +57,11 @@ export default function Home() {
         <div className="mt-32 grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3">
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden">
-              <img
+              <Image
                 src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
                 alt="AI Analysis"
+                width={600}
+                height={300}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -69,9 +72,11 @@ export default function Home() {
           </div>
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden bg-gray-100">
-              <img
+              <Image
                 src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
                 alt="Real-time Processing"
+                width={600}
+                height={300}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -82,9 +87,11 @@ export default function Home() {
           </div>
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden">
-              <img
+              <Image
                 src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
                 alt="Automated Workflows"
+                width={600}
+                height={300}
                 className="w-full h-full object-cover"
               />
             </div>

@@ -95,7 +95,7 @@ export default function Services() {
                 Ready to transform your business?
               </h2>
               <p className="mt-6 text-lg text-gray-300">
-                Let's discuss how our AI solutions can help you achieve your goals.
+                Let&apos;s discuss how our AI solutions can help you achieve your goals.
               </p>
               <div className="mt-10">
                 <Link

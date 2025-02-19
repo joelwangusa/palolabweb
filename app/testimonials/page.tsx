@@ -48,7 +48,7 @@ export default function Testimonials() {
                       <Star key={i + testimonial.rating} className="h-5 w-5 fill-gray-200 stroke-gray-200" />
                     ))}
                   </div>
-                  <div className="mt-6 text-lg leading-8 text-gray-600">"{testimonial.content}"</div>
+                  <div className="mt-6 text-lg leading-8 text-gray-600">&ldquo;{testimonial.content}&rdquo;</div>
                 </div>
                 <div className="mt-6 flex items-center gap-x-4">
                   <div className="text-sm leading-6">

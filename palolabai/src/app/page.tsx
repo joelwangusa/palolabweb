@@ -1,101 +1,135 @@
-import Image from "next/image";
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 
-export default function Home() {
+export default async function Home() {
+  // You can fetch data here using Next.js 15's async components
+  // const data = await fetchSomeData()
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-white">
+      {/* Announcement Banner */}
+      <div className="bg-gray-50 px-4 py-3">
+        <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
+          <p className="text-gray-700">Palo Labs secures $25M Series A funding for AI innovation</p>
+          <Link href="/about" className="text-blue-600 hover:text-blue-700 flex items-center">
+            Read more here
+            <ArrowRight className="ml-1 h-4 w-4" />
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Hero Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
+        <div className="relative">
+          {/* Decorative Elements */}
+          <div className="absolute -left-4 top-0 w-72 h-72 bg-blue-50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute -right-4 top-0 w-72 h-72 bg-purple-50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+
+          <div className="relative max-w-4xl mx-auto text-center">
+            <span className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-50 text-blue-700 mb-8">
+              Transforming businesses with AI
+            </span>
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
+              The only AI platform that works
+              <span className="block mt-2">your whole project with you</span>
+            </h1>
+            <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
+              Palo Labs works with you through the full project lifecycle, taking care of complex AI tasks so you can
+              operate at your highest potential.
+            </p>
+            <div className="mt-12 flex items-center justify-center gap-6">
+              <Link
+                href="/contact"
+                className="rounded-full px-8 py-4 text-base font-semibold text-white bg-gray-900 hover:bg-gray-800 transition-all"
+              >
+                Schedule a call
+              </Link>
+              <Link
+                href="/services"
+                className="rounded-full px-8 py-4 text-base font-semibold text-gray-600 bg-gray-50 hover:bg-gray-100 transition-all"
+              >
+                View Services
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Feature Section */}
+        <div className="mt-32 grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="relative">
+            <div className="h-[300px] rounded-2xl overflow-hidden">
+              <Image
+                src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
+                alt="AI Analysis"
+                width={500}
+                height={300}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">Advanced AI Analysis</h3>
+            <p className="mt-4 text-gray-600">
+              Our AI systems analyze complex data patterns to provide actionable insights for your business.
+            </p>
+          </div>
+          <div className="relative">
+            <div className="h-[300px] rounded-2xl overflow-hidden bg-gray-100">
+              <Image
+                src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
+                alt="Real-time Processing"
+                width={500}
+                height={300}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">Real-time Processing</h3>
+            <p className="mt-4 text-gray-600">
+              Process and analyze data in real-time with our advanced AI infrastructure.
+            </p>
+          </div>
+          <div className="relative">
+            <div className="h-[300px] rounded-2xl overflow-hidden">
+              <Image
+                src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
+                alt="Automated Workflows"
+                width={500}
+                height={300}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">Automated Workflows</h3>
+            <p className="mt-4 text-gray-600">
+              Streamline your operations with intelligent automation powered by our AI.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="bg-gray-50">
+        <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-2xl bg-gray-900 px-6 py-16 sm:px-12 sm:py-24">
+            <div className="relative max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Ready to transform your business with AI?
+              </h2>
+              <p className="mt-6 text-lg text-gray-300">
+                Join the leading companies already using Palo Labs to drive innovation.
+              </p>
+              <div className="mt-10">
+                <Link
+                  href="/contact"
+                  className="rounded-full px-8 py-4 text-base font-semibold text-gray-900 bg-white hover:bg-gray-100 transition-all"
+                >
+                  Get Started Today
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
+

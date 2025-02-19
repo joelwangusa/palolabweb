@@ -106,7 +106,7 @@ export default function Team() {
             <div className="relative max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Join Our Team of Innovators</h2>
               <p className="mt-6 text-lg text-gray-300">
-                We're always looking for talented individuals to help us push the boundaries of AI technology.
+                We&apos;re always looking for talented individuals to help us push the boundaries of AI technology.
               </p>
               <div className="mt-10">
                 <Link

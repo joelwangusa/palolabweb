@@ -44,7 +44,7 @@ export default function About() {
             </div>
             <h3 className="mt-8 text-xl font-semibold text-gray-900">Innovation</h3>
             <p className="mt-4 text-gray-600">
-              We constantly push the boundaries of what's possible in AI and machine learning.
+              We constantly push the boundaries of what&apos;s possible in AI and machine learning.
             </p>
           </div>
           <div className="relative">

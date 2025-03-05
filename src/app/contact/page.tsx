@@ -32,7 +32,7 @@ export default function Contact() {
         </div>
 
         <div className="mt-12 max-w-lg mx-auto">
-          <form className="grid grid-cols-1 gap-y-6">
+          <form id="contact-form"  action="https://formspree.io/f/mjkgpjeb" method="POST" className="grid grid-cols-1 gap-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-300">
                 Name

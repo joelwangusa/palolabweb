@@ -29,7 +29,7 @@ export default async function Home() {
 
           <div className="relative max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-50 text-blue-700 mb-8">
-              Transforming businesses with AI
+              Transforming businesses with A.I.
             </span>
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
               The only AI platform that works

@@ -28,7 +28,7 @@ export default function Contact() {
               Get in touch with us for any inquiries or collaboration opportunities.
             </p>
             <div className="mt-10">
-              <form className="space-y-8">
+              <form id="contact-form" action="https://formspree.io/f/mjkgpjeb" method="POST" className="space-y-8">
                 <div>
                   <input
                     type="text"

@@ -4,40 +4,33 @@ import { ArrowRight } from "lucide-react"
 
 const teamMembers = [
   {
-    name: "Jane Doe",
+    name: "Joe W.",
     role: "CEO & Founder",
-    image: "/placeholder.svg",
+    image: "/team_joe.png",
     expertise: "AI Strategy, Business Development",
-  },
-  { name: "John Smith", role: "CTO", image: "/placeholder.svg", expertise: "Machine Learning, Cloud Architecture" },
-  {
-    name: "Alice Johnson",
-    role: "Lead AI Researcher",
-    image: "/placeholder.svg",
-    expertise: "Natural Language Processing, Computer Vision",
   },
   {
     name: "Peter Chen",
     role: "Senior Full-Stack Developer",
-    image: "/placeholder.svg",
+    image: "/team_peter.png",
     expertise: "React, Node.js, Python, DevOps",
   },
   {
-    name: "Marco Rossi",
+    name: "Marco L.",
     role: "Data Scientist",
-    image: "/placeholder.svg",
+    image: "/team_marco.png",
     expertise: "Big Data Analytics, Statistical Modeling",
   },
   {
     name: "Emily Taylor",
     role: "UX/UI Designer",
-    image: "/placeholder.svg",
+    image: "/team_emily.png",
     expertise: "User-Centered Design, Prototyping",
   },
   {
     name: "Larry Zhang",
     role: "Backend Architect",
-    image: "/placeholder.svg",
+    image: "/team_larry.png",
     expertise: "Microservices, Database Design, API Development",
   },
 ]
@@ -48,7 +41,7 @@ export default function Team() {
       {/* Announcement Banner */}
       <div className="bg-gray-50 px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
-          <p className="text-gray-700">Meet the experts behind our innovative solutions</p>
+          <p className="text-gray-700">Palo Labs secures $25M Series A funding for AI innovation" to "Polo Alto has partnered with GETTR USA, Inc, which has over 10 million users, to deliver innovative solutions aimed at enhancing scalability and user experience</p>
           <Link href="/contact" className="text-blue-600 hover:text-blue-700 flex items-center">
             Join our team
             <ArrowRight className="ml-1 h-4 w-4" />

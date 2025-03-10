@@ -18,75 +18,54 @@ async function submitForm(formData: FormData) {
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+    <div className="bg-white">
+      <div className="relative isolate px-6 pt-14 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               Contact Us
-            </span>
-          </h1>
-          <p className="mt-6 max-w-2xl mx-auto text-xl sm:text-2xl text-gray-300">
-            Get in touch with us for any inquiries or collaboration opportunities.
-          </p>
-        </div>
-
-        <div className="mt-12 max-w-lg mx-auto">
-          <form id="contact-form"  action="https://formspree.io/f/mjkgpjeb" method="POST" className="grid grid-cols-1 gap-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-300">
-                Name
-              </label>
-              <div className="mt-1">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  autoComplete="name"
-                  required
-                  className="py-3 px-4 block w-full shadow-sm bg-gray-700 border-gray-600 rounded-md text-white focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              Get in touch with us for any inquiries or collaboration opportunities.
+            </p>
+            <div className="mt-10">
+              <form className="space-y-8">
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                    className="block w-full rounded-lg border-0 px-4 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    className="block w-full rounded-lg border-0 px-4 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows={4}
+                    placeholder="Message"
+                    className="block w-full rounded-lg border-0 px-4 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                  ></textarea>
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    className="block w-full rounded-lg bg-blue-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
             </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300">
-                Email
-              </label>
-              <div className="mt-1">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
-                  className="py-3 px-4 block w-full shadow-sm bg-gray-700 border-gray-600 rounded-md text-white focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-300">
-                Message
-              </label>
-              <div className="mt-1">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  required
-                  className="py-3 px-4 block w-full shadow-sm bg-gray-700 border-gray-600 rounded-md text-white focus:ring-blue-500 focus:border-blue-500"
-                ></textarea>
-              </div>
-            </div>
-            <div>
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                Send Message
-                <Send className="ml-2 -mr-1 h-5 w-5" />
-              </button>
-            </div>
-          </form>
         </div>
       </div>
     </div>

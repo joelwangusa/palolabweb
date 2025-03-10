@@ -11,7 +11,7 @@ export default async function Home() {
       {/* Announcement Banner */}
       <div className="bg-gray-50 px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
-          <p className="text-gray-700">Palo Labs secures $25M Series A funding for AI innovation</p>
+          <p className="text-gray-700">Palo Labs secures $25M Series A funding for AI innovation" to "Polo Alto has partnered with GETTR USA, Inc, which has over 10 million users, to deliver innovative solutions aimed at enhancing scalability and user experience.</p>
           <Link href="/about" className="text-blue-600 hover:text-blue-700 flex items-center">
             Read more here
             <ArrowRight className="ml-1 h-4 w-4" />

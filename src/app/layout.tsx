@@ -3,14 +3,35 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Link from "next/link"
-import { Cpu } from "lucide-react"
-
+//import { Cpu } from "lucide-react"
+import Image from 'next/image';
 const inter = Inter({ subsets: ["latin"] })
+function PaloLabLogo() {
+  return (
+      <Image
+        src='/placeholder-logo.png'
+        alt="Palo Lab"
+        width={24} 
+        height={24} 
+      />
+  );
+}
 
 export const metadata: Metadata = {
   title: "Palo Labs Inc",
   description: "Innovative AI Solutions for the Future",
-    generator: 'v0.dev'
+  icons: {
+    icon: [
+      { url: '/placeholder-logo.svg', sizes: 'any', type: 'image/svg+xml' },
+    ],
+    apple: { url: '/placeholder-logo.svg' },
+    other: {
+       rel: 'mask-icon',
+       url: '/placeholder-logo.svg',
+       color: '#0055a0',
+    },
+  },
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -25,7 +46,8 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
               <Link href="/" className="flex items-center">
-                <Cpu className="h-8 w-8 text-gray-900" />
+                {/* <Cpu className="h-8 w-8 text-gray-900" /> */}
+                <PaloLabLogo /> 
                 <span className="ml-2 text-xl font-bold text-gray-900">Palo Labs Inc</span>
               </Link>
               <nav className="hidden md:flex items-center space-x-8">
@@ -57,7 +79,8 @@ export default function RootLayout({
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="col-span-2">
                 <Link href="/" className="flex items-center">
-                  <Cpu className="h-8 w-8 text-gray-900" />
+                  {/* <Cpu className="h-8 w-8 text-gray-900" /> */}
+                  <PaloLabLogo /> 
                   <span className="ml-2 text-xl font-bold text-gray-900">Palo Labs Inc</span>
                 </Link>
                 <p className="mt-4 text-base text-gray-600">Transforming businesses with innovative AI solutions.</p>

@@ -4,24 +4,43 @@ import { ArrowRight } from "lucide-react"
 
 const portfolioItems = [
   {
-    title: "ConnectHub",
+    title: "Social Media Platforms",
     description: "A large-scale social media platform with advanced AI-driven content recommendation.",
-    image: "/placeholder.svg",
-    technologies: ["React", "Node.js", "GraphQL", "AWS"],
+    image: "/portfolio_social_media.png",
+    technologies: ["React", "Node.js", "OpenAI", "AWS"],
   },
   {
-    title: "LuxeMarket",
+    title: "Luxury e-commerce",
     description:
       "High-end e-commerce website with personalized shopping experiences and AI-powered inventory management.",
-    image: "/placeholder.svg",
-    technologies: ["Next.js", "Python", "TensorFlow", "Google Cloud"],
+    image: "/portfolio_e_commerce.png",
+    technologies: ["Next.js", "Java", "Shopify", "AI/ML", "GCP"],
   },
+  // {
+  //   title: "DataVirPro",
+  //   description: "Enterprise-level data visualization tool with real-time analytics and machine learning insights.",
+  //   image: "/portfolio_data.png",
+  //   technologies: ["BigQuery", "Power BI", "Grafana"],
+  // },
   {
-    title: "DataVizPro",
-    description: "Enterprise-level data visualization tool with real-time analytics and machine learning insights.",
-    image: "/placeholder.svg",
-    technologies: ["Vue.js", "Django", "D3.js", "Azure"],
+    title: "Multi-Cloud Solutions",
+    description: "A multi-cloud expert designs, implements, and manages containerized solutions with AIOps across multiple cloud platforms.",
+    image: "/portfolio_multi_cloud_solutions.png",
+    technologies: ["AWS", "GCP", "VPN", "Kubernetes", "AIOps"],
   },
+  //, optimizing performance, security, and cost-efficiency
+  // {
+  //   title: "Multi-Cloud Solutions",
+  //   description: "Enterprise-level data visualization tool with real-time analytics and machine learning insights.",
+  //   image: "/portfolio_multi_cloud_solutions.png",
+  //   technologies: ["Vue.js", "Django", "D3.js", "Azure"],
+  // },
+  // {
+  //   title: "Multi-Cloud Solutions",
+  //   description: "Enterprise-level data visualization tool with real-time analytics and machine learning insights.",
+  //   image: "/portfolio_multi_cloud_solutions.png",
+  //   technologies: ["Vue.js", "Django", "D3.js", "Azure"],
+  // },
 ]
 
 export default function Portfolio() {

@@ -7,7 +7,7 @@ export default function About() {
       {/* Announcement Banner */}
       <div className="bg-gray-50 px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
-          <p className="text-gray-700">Learn about our mission and vision</p>
+          <p className="text-gray-700">Palo Labs secures $25M Series A funding for AI innovation" to "Polo Alto has partnered with GETTR USA, Inc, which has over 10 million users, to deliver innovative solutions aimed at enhancing scalability and user experience.</p>
           <Link href="/team" className="text-blue-600 hover:text-blue-700 flex items-center">
             Meet our team
             <ArrowRight className="ml-1 h-4 w-4" />
@@ -26,12 +26,11 @@ export default function About() {
             <span className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-50 text-blue-700 mb-8">
               About Palo Labs
             </span>
-            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Pioneering the Future of AI Technology
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Pioneering Growth with AI Innovation
             </h1>
             <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
-              Palo Labs Inc is a technology company based in San Mateo, CA that specializes in developing innovative
-              software solutions for a variety of industries.
+            Palo Labs Inc., based in San Mateo, CA, specializes in rapidly developing AI applications, including mobile solutions and Minimum Viable Products (MVPs). We harness AI to enhance efficiency, drive innovation, and accelerate business growth.
             </p>
           </div>
         </div>

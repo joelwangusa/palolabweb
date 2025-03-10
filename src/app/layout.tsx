@@ -5,18 +5,15 @@ import "./globals.css"
 import Link from "next/link"
 //import { Cpu } from "lucide-react"
 import Image from 'next/image';
-import PaloLabLogoSVG from '../../public/placeholder-logo.svg';
-
 const inter = Inter({ subsets: ["latin"] })
-
 function PaloLabLogo() {
   return (
-    <Image
-      src={PaloLabLogoSVG}
-      alt="Palo Lab"
-      width={24} 
-      height={24} 
-    />
+      <Image
+        src='/placeholder-logo.png'
+        alt="Palo Lab"
+        width={24} 
+        height={24} 
+      />
   );
 }
 
@@ -50,7 +47,7 @@ export default function RootLayout({
             <div className="flex justify-between items-center py-4">
               <Link href="/" className="flex items-center">
                 {/* <Cpu className="h-8 w-8 text-gray-900" /> */}
-                <PaloLabLogo className="h-8 w-8 text-gray-900" /> 
+                <PaloLabLogo /> 
                 <span className="ml-2 text-xl font-bold text-gray-900">Palo Labs Inc</span>
               </Link>
               <nav className="hidden md:flex items-center space-x-8">
@@ -83,7 +80,7 @@ export default function RootLayout({
               <div className="col-span-2">
                 <Link href="/" className="flex items-center">
                   {/* <Cpu className="h-8 w-8 text-gray-900" /> */}
-                  <PaloLabLogo className="h-8 w-8 text-gray-900" /> 
+                  <PaloLabLogo /> 
                   <span className="ml-2 text-xl font-bold text-gray-900">Palo Labs Inc</span>
                 </Link>
                 <p className="mt-4 text-base text-gray-600">Transforming businesses with innovative AI solutions.</p>

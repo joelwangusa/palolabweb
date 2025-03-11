@@ -1,3 +1,13 @@
+### Change 20250310
+
+```bash
+# error: could not load the "sharp" module using the linux-x64 runtime
+yarn add sharp
+```
+
+> Sharp Missing In Production:
+> https://nextjs.org/docs/messages/sharp-missing-in-production
+
 ### Changed 20250309
 
 #### Modified files

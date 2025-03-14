@@ -1,3 +1,20 @@
+### Change 20250314
+
+Fix Error: Could not load the "sharp" module using the linux-x64 runtime
+
+```bash
+# separate upstream and development remotes in a GitHub project
+git remote add development  git@github.com:marcoleung/palolabweb.git
+
+# Force reinstall dependencies
+rm -rf node_modules yarn.lock
+yarn install
+
+# Use @vercel/build-utils to include sharp
+# Using sharp for image processing, you might need to include it explicitly for Vercel
+yarn add sharp @vercel/build-utils
+```
+
 ### Changed 20250309
 
 #### Modified files

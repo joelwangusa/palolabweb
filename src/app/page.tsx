@@ -1,6 +1,9 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import AiAnalysisImage from "../../public/home_ai_analysis.png";
+import RealTimeProcessingImage from "../../public/home_real_time_processing.png";
+import AutomatedWorkflowImage from "../../public/home_automated_workflows.png";
 
 export default async function Home() {
   // You can fetch data here using Next.js 15's async components
@@ -31,13 +34,11 @@ export default async function Home() {
             <span className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-50 text-blue-700 mb-8">
               Transforming businesses with A.I.
             </span>
-            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-              The only AI platform that works
-              <span className="block mt-2">your whole project with you</span>
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Your AI Acceleration Partner
             </h1>
-            <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
-              Palo Labs works with you through the full project lifecycle, taking care of complex AI tasks so you can
-              operate at your highest potential.
+            <p className="mt-8 text-xl text-gray-600 max-w-1xl mx-auto">
+            We help businesses quickly adopt AI to boost internal technology and efficiency. Specializing in fast prototyping and leveraging the latest AI tools, we bring new ideas to life. With expertise in machine learning and large language models (LLMs), we create custom AI solutions that give companies a competitive edge
             </p>
             <div className="mt-12 flex items-center justify-center gap-6">
               <Link
@@ -61,7 +62,7 @@ export default async function Home() {
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden">
               <Image
-                src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
+                src={ AiAnalysisImage }
                 alt="AI Analysis"
                 width={500}
                 height={300}
@@ -76,7 +77,7 @@ export default async function Home() {
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden bg-gray-100">
               <Image
-                src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
+                src={ RealTimeProcessingImage }
                 alt="Real-time Processing"
                 width={500}
                 height={300}
@@ -91,7 +92,7 @@ export default async function Home() {
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden">
               <Image
-                src="https://sjc.microlink.io/KcdWKX6Ee7gjMeOFT_H0-V5xTCLOr3bo-Hx2GFAUqnkPAiAVudqmcEAMeA1x4OKBeL4idLwUq9Jo9MvMD2XVOw.jpeg"
+                src={ AutomatedWorkflowImage }
                 alt="Automated Workflows"
                 width={500}
                 height={300}

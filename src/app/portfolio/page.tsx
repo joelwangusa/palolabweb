@@ -4,13 +4,13 @@ import { ArrowRight } from "lucide-react"
 
 const portfolioItems = [
   {
-    title: "Social Media Platforms",
-    description: "A large-scale social media platform with advanced AI-driven content recommendation.",
+    title: "Medium social media in USA",
+    description: "A medium-sized social media platform with advanced AI-driven content recommendation.",
     image: "/portfolio_social_media.png",
     technologies: ["React", "Node.js", "OpenAI", "AWS"],
   },
   {
-    title: "Luxury e-commerce",
+    title: "Luxury e-commerce in Italy",
     description:
       "High-end e-commerce website with personalized shopping experiences and AI-powered inventory management.",
     image: "/portfolio_e_commerce.png",
@@ -23,7 +23,7 @@ const portfolioItems = [
   //   technologies: ["BigQuery", "Power BI", "Grafana"],
   // },
   {
-    title: "Multi-Cloud Solutions",
+    title: "Multi-Cloud Solutions in USA",
     description: "A multi-cloud expert designs, implements, and manages containerized solutions with AIOps across multiple cloud platforms.",
     image: "/portfolio_multi_cloud_solutions.png",
     technologies: ["AWS", "GCP", "VPN", "Kubernetes", "AIOps"],

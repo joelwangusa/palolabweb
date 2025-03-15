@@ -91,7 +91,7 @@ export default function RootLayout({
                   href="/contact"
                   className="rounded-full px-4 py-2 text-base font-medium text-white bg-gray-900 hover:bg-gray-800"
                 >
-                  Contact Us
+                  Get Started
                 </Link>
               </nav>
             </div>

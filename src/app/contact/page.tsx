@@ -7,6 +7,7 @@ async function submitForm(formData: FormData) {
 
   const name = formData.get("name")
   const email = formData.get("email")
+  const phone = formData.get("phone")
   const message = formData.get("message")
 
   // Here you would typically send this data to your backend or API
@@ -44,6 +45,15 @@ export default function Contact() {
                     name="email"
                     id="email"
                     placeholder="Email"
+                    className="block w-full rounded-lg border-0 px-4 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="phone"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone"
                     className="block w-full rounded-lg border-0 px-4 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                   />
                 </div>

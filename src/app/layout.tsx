@@ -40,7 +40,7 @@ function PaloLabLogo() {
 }
 
 export const metadata: Metadata = {
-  title: "Palo Labs AI",
+  title: "Palo Lab AI | Full-Service AI Consulting & Development",
   description: "Empowering Innovation, Accelerating Growth",
   icons: {
     icon: [

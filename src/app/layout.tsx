@@ -149,6 +149,15 @@ export default function RootLayout({
               {/* Social Media Links */}
               <div className="flex justify-center space-x-6 mb-6">
                 <a 
+                  href="https://linkedin.com/company/palolabai"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-gray-900"
+                >
+                  <span className="sr-only">LinkedIn</span>
+                  <Linkedin className="h-6 w-6" />
+                </a>
+                <a 
                   href="https://x.com/palolabai" 
                   target="_blank" 
                   rel="noopener noreferrer" 
@@ -156,7 +165,7 @@ export default function RootLayout({
                 >
                   <span className="sr-only">X (formerly Twitter)</span>
                   <XIcon className="h-6 w-6" />
-                </a>
+                </a>                
                 <a 
                   href="https://github.com/palolabai" 
                   target="_blank" 

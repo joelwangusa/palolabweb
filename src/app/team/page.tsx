@@ -7,31 +7,37 @@ const teamMembers = [
     name: "Joe W.",
     role: "CEO & Founder",
     image: "/team_joe.png",
-    expertise: "AI Strategy, Business Development",
+    expertise: "Tech Lead & Machine Learning Engineer",
   },
   {
-    name: "Peter Chen",
-    role: "Senior Full-Stack Developer",
+    name: "Peter Z.",
+    role: "Senior App & Fullstack Engineer",
     image: "/team_peter.png",
-    expertise: "React, Node.js, Python, DevOps",
+    expertise: "Flutter, React, Node.js, Python, WebRTC",
   },
   {
     name: "Marco L.",
-    role: "Data Scientist",
+    role: "Machine Learning & Fullstack Engineer",
     image: "/team_marco.png",
-    expertise: "Big Data Analytics, Statistical Modeling",
+    expertise: "LLMs, DevOps, Kafka, RAG, VectorDB, WebRTC",
   },
   {
-    name: "Emily Taylor",
-    role: "UX/UI Designer",
+    name: "Emily Z",
+    role: "Senior Product Manager",
     image: "/team_emily.png",
-    expertise: "User-Centered Design, Prototyping",
+    expertise: "Product Design, Data Analysis, Python",
   },
   {
-    name: "Larry Zhang",
-    role: "Backend Architect",
+    name: "Larry Y.",
+    role: "Senior Machine Learning Engineer",
     image: "/team_larry.png",
-    expertise: "Microservices, Database Design, API Development",
+    expertise: "Machine Learning, LLMs, RAG, Python, Java",
+  },
+  {
+    name: "Andy S.",
+    role: "Senior Web Engineer",
+    image: "/team_larry.png",
+    expertise: "LLMs, NextJS/React, TailwindCSS, TypeScript",
   },
 ]
 
@@ -39,6 +45,7 @@ export default function Team() {
   return (
     <div className="min-h-screen bg-white">
       {/* Announcement Banner */}
+      {/*
       <div className="bg-gray-50 px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
           <p className="text-gray-700">Palo Labs secures $25M Series A funding for AI innovation" to "Polo Alto has partnered with GETTR USA, Inc, which has over 10 million users, to deliver innovative solutions aimed at enhancing scalability and user experience</p>
@@ -48,6 +55,7 @@ export default function Team() {
           </Link>
         </div>
       </div>
+      */}
 
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
@@ -61,11 +69,10 @@ export default function Team() {
               Our Team
             </span>
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Meet the Innovators Behind Palo Labs
+              Your Trusted Colleagues in AI
             </h1>
             <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
-              Our diverse team of experts covers all aspects of full-stack development and AI technologies, driving
-              innovation and excellence in every project.
+              At Palo Lab AI, our expert team seamlessly integrates with yours, managing your AI initiatives so you can focus on strategic growth.
             </p>
           </div>
         </div>
@@ -93,25 +100,29 @@ export default function Team() {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-32">
-          <div className="relative rounded-2xl bg-gray-900 px-6 py-16 sm:px-12 sm:py-24">
-            <div className="relative max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Join Our Team of Innovators</h2>
-              <p className="mt-6 text-lg text-gray-300">
-                We're always looking for talented individuals to help us push the boundaries of AI technology.
-              </p>
-              <div className="mt-10">
-                <Link
-                  href="/contact"
-                  className="rounded-full px-8 py-4 text-base font-semibold text-gray-900 bg-white hover:bg-gray-100 transition-all"
-                >
-                  Explore Opportunities
-                </Link>
-              </div>
-            </div>
+      {/* Call to Action */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-2xl bg-gray-50 px-6 py-16 sm:px-12 sm:py-24">
+        <div className="relative max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Enhance Your Team with AI Expertise
+          </h2>
+          <p className="mt-6 text-lg text-gray-700">
+            Palo Lab AI provides specialized, experienced AI developers who seamlessly integrate with your team, allowing you to focus on driving your core business forward.
+          </p>
+          <div className="mt-10">
+            <Link
+          href="/contact"
+          className="rounded-full px-8 py-4 text-base font-semibold text-white bg-gray-900 transition-all"
+            >
+          Start Your Project
+            </Link>
           </div>
         </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   )

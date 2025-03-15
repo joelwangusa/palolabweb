@@ -11,17 +11,16 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Announcement Banner */}
+      {/*
       <div className="bg-gray-50 px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
-          <p className="text-gray-700">Palo Labs secures $25M Series A funding for AI innovation" to "Polo Alto has partnered with GETTR USA, Inc, which has over 10 million users, to deliver innovative solutions aimed at enhancing scalability and user experience.</p>
+          <p className="text-gray-700">Palo Labs secures $25M Series A funding for AI innovation" to "Polo Alto has partnered with xxx, Inc, which has over 10 million users, to deliver innovative solutions aimed at enhancing scalability and user experience.</p>
           <Link href="/about" className="text-blue-600 hover:text-blue-700 flex items-center">
             Read more here
             <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
         </div>
-      </div>
-
+      </div> */}
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
         <div className="relative">
@@ -32,26 +31,26 @@ export default async function Home() {
 
           <div className="relative max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-50 text-blue-700 mb-8">
-              Transforming businesses with A.I.
+              Empowering Innovation, Accelerating Growth
             </span>
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Your AI Acceleration Partner
+            Full-Service AI Consulting & Development
             </h1>
             <p className="mt-8 text-xl text-gray-600 max-w-1xl mx-auto">
-            We help businesses quickly adopt AI to boost internal technology and efficiency. Specializing in fast prototyping and leveraging the latest AI tools, we bring new ideas to life. With expertise in machine learning and large language models (LLMs), we create custom AI solutions that give companies a competitive edge
+            At Palo Lab AI, we provide comprehensive AI consulting tailored precisely to your business needs. Whether you require full-service AI development, seamless collaboration with your internal teams, or rapid MVP creation, our dedicated experts deliver solutions quickly, reliably, and effectively.
             </p>
             <div className="mt-12 flex items-center justify-center gap-6">
               <Link
                 href="/contact"
                 className="rounded-full px-8 py-4 text-base font-semibold text-white bg-gray-900 hover:bg-gray-800 transition-all"
               >
-                Schedule a call
+                GET IN TOUCH
               </Link>
               <Link
-                href="/services"
+                href="/portfolio"
                 className="rounded-full px-8 py-4 text-base font-semibold text-gray-600 bg-gray-50 hover:bg-gray-100 transition-all"
               >
-                View Services
+                View Portfolio
               </Link>
             </div>
           </div>
@@ -108,25 +107,25 @@ export default async function Home() {
       </div>
 
       {/* Call to Action */}
-      <div className="bg-gray-50">
+      <div className="bg-white">
         <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
-          <div className="relative rounded-2xl bg-gray-900 px-6 py-16 sm:px-12 sm:py-24">
-            <div className="relative max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Ready to transform your business with AI?
-              </h2>
-              <p className="mt-6 text-lg text-gray-300">
-                Join the leading companies already using Palo Labs to drive innovation.
-              </p>
-              <div className="mt-10">
-                <Link
-                  href="/contact"
-                  className="rounded-full px-8 py-4 text-base font-semibold text-gray-900 bg-white hover:bg-gray-100 transition-all"
-                >
-                  Get Started Today
-                </Link>
-              </div>
-            </div>
+          <div className="relative rounded-2xl bg-gray-50 px-6 py-16 sm:px-12 sm:py-24">
+        <div className="relative max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Enhance Your Team with AI Expertise
+          </h2>
+          <p className="mt-6 text-lg text-gray-700">
+            Palo Lab AI provides specialized, experienced AI developers who seamlessly integrate with your team, allowing you to focus on driving your core business forward.
+          </p>
+          <div className="mt-10">
+            <Link
+          href="/contact"
+          className="rounded-full px-8 py-4 text-base font-semibold text-white bg-gray-900 transition-all"
+            >
+          Start Your Project
+            </Link>
+          </div>
+        </div>
           </div>
         </div>
       </div>

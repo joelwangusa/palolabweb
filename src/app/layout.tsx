@@ -19,8 +19,8 @@ function PaloLabLogo() {
 }
 
 export const metadata: Metadata = {
-  title: "Palo Labs Inc",
-  description: "Innovative AI Solutions for the Future",
+  title: "Palo Labs AI",
+  description: "Empowering Innovation, Accelerating Growth",
   icons: {
     icon: [
       { url: '/placeholder-logo.svg', sizes: 'any', type: 'image/svg+xml' },
@@ -49,15 +49,17 @@ export default function RootLayout({
               <Link href="/" className="flex items-center">
                 {/* <Cpu className="h-8 w-8 text-gray-900" /> */}
                 <PaloLabLogo /> 
-                <span className="ml-2 text-xl font-bold text-gray-900">Palo Labs Inc</span>
+                <span className="ml-2 text-xl font-bold text-gray-900">Palo Labs.ai</span>
               </Link>
               <nav className="hidden md:flex items-center space-x-8">
+                {/*
                 <Link href="/about" className="text-base font-medium text-gray-600 hover:text-gray-900">
                   About
                 </Link>
                 <Link href="/services" className="text-base font-medium text-gray-600 hover:text-gray-900">
                   Services
                 </Link>
+                */}
                 <Link href="/team" className="text-base font-medium text-gray-600 hover:text-gray-900">
                   Team
                 </Link>
@@ -82,9 +84,9 @@ export default function RootLayout({
                 <Link href="/" className="flex items-center">
                   {/* <Cpu className="h-8 w-8 text-gray-900" /> */}
                   <PaloLabLogo /> 
-                  <span className="ml-2 text-xl font-bold text-gray-900">Palo Labs Inc</span>
+                  <span className="ml-2 text-xl font-bold text-gray-900">Palo Labs.ai</span>
                 </Link>
-                <p className="mt-4 text-base text-gray-600">Transforming businesses with innovative AI solutions.</p>
+                <p className="mt-4 text-base text-gray-600">Empowering Innovation, Accelerating Growth</p>
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Company</h3>
@@ -115,10 +117,15 @@ export default function RootLayout({
                     </Link>
                   </li>
                   <li>
-                    <a href="mailto:info@palolabs.ai" className="text-base text-gray-600 hover:text-gray-900">
-                      info@palolabs.ai
+                    <a href="mailto:contact@palolabs.ai" className="text-base text-gray-600 hover:text-gray-900">
+                      contact@palolabs.ai
                     </a>
                   </li>
+                  <li>
+                    <a href="#" className="text-base text-gray-600 hover:text-gray-900">
+                      +1 (650)-444-1303
+                    </a>
+                  </li>                
                 </ul>
               </div>
             </div>

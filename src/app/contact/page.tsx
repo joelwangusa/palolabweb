@@ -59,9 +59,9 @@ export default function Contact() {
                 <div>
                   <button
                     type="submit"
-                    className="block w-full rounded-lg bg-blue-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                    className="block w-full rounded-lg bg-gray-900 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
-                    Send Message
+                    SUBMIT
                   </button>
                 </div>
               </form>

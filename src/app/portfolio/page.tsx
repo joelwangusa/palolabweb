@@ -47,7 +47,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-white">
       {/* Announcement Banner */}
-      <div className="bg-gray-50 px-4 py-3">
+      {/*      <div className="bg-gray-50 px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
           <p className="text-gray-700">Discover our innovative AI solutions in action</p>
           <Link href="/contact" className="text-blue-600 hover:text-blue-700 flex items-center">
@@ -56,6 +56,7 @@ export default function Portfolio() {
           </Link>
         </div>
       </div>
+      */}
 
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
@@ -106,27 +107,29 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-32">
-          <div className="relative rounded-2xl bg-gray-900 px-6 py-16 sm:px-12 sm:py-24">
-            <div className="relative max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Ready to Transform Your Business?
-              </h2>
-              <p className="mt-6 text-lg text-gray-300">
-                Let&apos;s discuss how our AI solutions can help you achieve your goals and stand out in your industry.
-              </p>
-              <div className="mt-10">
-                <Link
-                  href="/contact"
-                  className="rounded-full px-8 py-4 text-base font-semibold text-gray-900 bg-white hover:bg-gray-100 transition-all"
-                >
-                  Start Your Project
-                </Link>
-              </div>
-            </div>
+      {/* Call to Action */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-2xl bg-gray-50 px-6 py-16 sm:px-12 sm:py-24">
+        <div className="relative max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Enhance Your Team with AI Expertise
+          </h2>
+          <p className="mt-6 text-lg text-gray-700">
+            Palo Lab AI provides specialized, experienced AI developers who seamlessly integrate with your team, allowing you to focus on driving your core business forward.
+          </p>
+          <div className="mt-10">
+            <Link
+          href="/contact"
+          className="rounded-full px-8 py-4 text-base font-semibold text-white bg-gray-900 transition-all"
+            >
+          Start Your Project
+            </Link>
           </div>
         </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   )

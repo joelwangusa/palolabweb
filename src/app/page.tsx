@@ -68,9 +68,9 @@ export default async function Home() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="mt-8 text-xl font-semibold text-gray-900">Advanced AI Analysis</h3>
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">Illustration of quick product launch or agile prototyping</h3>
             <p className="mt-4 text-gray-600">
-              Our AI systems analyze complex data patterns to provide actionable insights for your business.
+              Turn your vision into reality quickly with agile prototyping and rapid MVP development. We deliver scalable, market-ready products to validate your ideas fast.
             </p>
           </div>
           <div className="relative">
@@ -83,9 +83,9 @@ export default async function Home() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="mt-8 text-xl font-semibold text-gray-900">Real-time Processing</h3>
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">Qualified AI Engineering Teams</h3>
             <p className="mt-4 text-gray-600">
-              Process and analyze data in real-time with our advanced AI infrastructure.
+              Extend your team seamlessly with experienced AI developers specializing in large language models (LLMs) and machine learning, enabling your in-house teams to focus on strategic innovation.
             </p>
           </div>
           <div className="relative">
@@ -98,9 +98,9 @@ export default async function Home() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="mt-8 text-xl font-semibold text-gray-900">Automated Workflows</h3>
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">Enterprise-grade, Scalable Solutions</h3>
             <p className="mt-4 text-gray-600">
-              Streamline your operations with intelligent automation powered by our AI.
+              Build robust, scalable AI and technology solutions trusted by platforms with millions of users, luxury e-commerce brands, and large-scale applications.
             </p>
           </div>
         </div>

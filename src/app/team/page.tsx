@@ -19,14 +19,14 @@ const teamMembers = [
     "name": "Joel Wong",
     "role": "Founder",
     "department": "Executive",
-    "bio": "Joel is an experienced tech leader specializing in machine learning and AI strategy."
+    "bio": "Joel is an experienced tech leader specializing in deep learning, learning, NLP, LLM,  and large-scale system."
   },
   {
     "id": "2",
     "name": "Peter Lee",
     "role": "Senior App & Fullstack Engineer",
     "department": "Engineering",
-    "bio": "Peter excels in mobile and web app development, leveraging Flutter, React, Node.js, Python, and WebRTC."
+    "bio": "Peter excels in mobile and web app development, leveraging Flutter, React, Node.js, Java, Python, and WebRTC."
   },
   {
     "id": "3",
@@ -46,7 +46,7 @@ const teamMembers = [
     "id": "5",
     "name": "Larry Yang",
     "role": "Senior Machine Learning Engineer",
-    "department": "Marketing",
+    "department": "Engineering",
     "bio": "Larry utilizes advanced machine learning techniques to enhance data-driven marketing strategies."
   },
   {
@@ -84,7 +84,7 @@ export default function Team() {
 
           <div className="relative max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-50 text-blue-700 mb-8">
-              Our Team
+              Palo Lab Core Team
             </span>
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Your Trusted Colleagues in AI

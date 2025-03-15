@@ -5,8 +5,29 @@ import Image from 'next/image'
 import Link from "next/link"
 import "./globals.css"
 //import { Cpu } from "lucide-react"
+import { Linkedin, Github } from "lucide-react"
 
 const inter = Inter({ subsets: ["latin"] })
+
+// Custom X (formerly Twitter) icon component
+function XIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      {...props}
+    >
+      <path d="M4 4l16 16" />
+      <path d="M20 4L4 20" />
+    </svg>
+  );
+}
+
 function PaloLabLogo() {
   return (
       <Image
@@ -130,6 +151,27 @@ export default function RootLayout({
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-200">
+              {/* Social Media Links */}
+              <div className="flex justify-center space-x-6 mb-6">
+                <a 
+                  href="https://x.com/palolabai" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-gray-900"
+                >
+                  <span className="sr-only">X (formerly Twitter)</span>
+                  <XIcon className="h-6 w-6" />
+                </a>
+                <a 
+                  href="https://github.com/palolabai" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-gray-900"
+                >
+                  <span className="sr-only">GitHub</span>
+                  <Github className="h-6 w-6" />
+                </a>
+              </div>
               <p className="text-base text-gray-400 text-center">
                 © {new Date().getFullYear()} Palo Labs Inc. All rights reserved.
               </p>
@@ -140,7 +182,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'

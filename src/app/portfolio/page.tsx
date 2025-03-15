@@ -4,43 +4,24 @@ import { ArrowRight } from "lucide-react"
 
 const portfolioItems = [
   {
-    title: "Medium social media in USA",
-    description: "A medium-sized social media platform with advanced AI-driven content recommendation.",
+    title: "U.S.-based Social Media Platform",
+    description: "Developed a robust, user-friendly social media platform supporting over 15 million users, featuring seamless live streaming, engaging microblogging, dynamic short-video content, and advanced scalability for large-scale user interactions.",
     image: "/portfolio_social_media.png",
-    technologies: ["React", "Node.js", "OpenAI", "AWS"],
+    technologies: ["React", "Node.js", "OpenAI", "Kafka", "Redis", "Kubenetes", "Databricks", "WebRTC"],
   },
   {
-    title: "Luxury e-commerce in Italy",
+    title: "Luxury E-commerce Platform in Italy",
     description:
-      "High-end e-commerce website with personalized shopping experiences and AI-powered inventory management.",
+      "High-end luxury e-commerce website powered by advanced AI-driven inventory management, seamless integration with Shopify, SAP, and third-party logistics (3PL), and secure cryptocurrency payment support.",
     image: "/portfolio_e_commerce.png",
-    technologies: ["Next.js", "Java", "Shopify", "AI/ML", "GCP"],
+    technologies: ["Shopify", "AI/ML", "3PL", "Payment", "Cryptocurrencies"],
   },
-  // {
-  //   title: "DataVirPro",
-  //   description: "Enterprise-level data visualization tool with real-time analytics and machine learning insights.",
-  //   image: "/portfolio_data.png",
-  //   technologies: ["BigQuery", "Power BI", "Grafana"],
-  // },
   {
     title: "Multi-Cloud Solutions in USA",
-    description: "A multi-cloud expert designs, implements, and manages containerized solutions with AIOps across multiple cloud platforms.",
+    description: "Designed and implemented robust, containerized multi-cloud solutions enhanced with advanced AIOps capabilities, reliably supporting applications with multi-million active users.",
     image: "/portfolio_multi_cloud_solutions.png",
     technologies: ["AWS", "GCP", "VPN", "Kubernetes", "AIOps"],
   },
-  //, optimizing performance, security, and cost-efficiency
-  // {
-  //   title: "Multi-Cloud Solutions",
-  //   description: "Enterprise-level data visualization tool with real-time analytics and machine learning insights.",
-  //   image: "/portfolio_multi_cloud_solutions.png",
-  //   technologies: ["Vue.js", "Django", "D3.js", "Azure"],
-  // },
-  // {
-  //   title: "Multi-Cloud Solutions",
-  //   description: "Enterprise-level data visualization tool with real-time analytics and machine learning insights.",
-  //   image: "/portfolio_multi_cloud_solutions.png",
-  //   technologies: ["Vue.js", "Django", "D3.js", "Azure"],
-  // },
 ]
 
 export default function Portfolio() {
@@ -67,14 +48,13 @@ export default function Portfolio() {
 
           <div className="relative max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-50 text-blue-700 mb-8">
-              Our Portfolio
+              Success Stories
             </span>
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Transforming Businesses with AI
+              Driving Innovation Across Industries
             </h1>
             <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover how we've helped businesses transform with cutting-edge AI solutions. Our portfolio showcases the
-              power of innovation in action.
+            Discover how Palo Lab delivers innovative technology solutions, supporting platforms with over 10 million users, large-scale systems, and high-end e-commerce websites.
             </p>
           </div>
         </div>

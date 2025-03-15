@@ -81,11 +81,11 @@ export default function RootLayout({
                   Services
                 </Link>
                 */}
-                <Link href="/team" className="text-base font-medium text-gray-600 hover:text-gray-900">
-                  Team
-                </Link>
                 <Link href="/portfolio" className="text-base font-medium text-gray-600 hover:text-gray-900">
                   Portfolio
+                </Link>
+                <Link href="/team" className="text-base font-medium text-gray-600 hover:text-gray-900">
+                  Team
                 </Link>
                 <Link
                   href="/contact"
@@ -112,11 +112,6 @@ export default function RootLayout({
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Company</h3>
                 <ul className="mt-4 space-y-4">
-                  <li>
-                    <Link href="/about" className="text-base text-gray-600 hover:text-gray-900">
-                      About
-                    </Link>
-                  </li>
                   <li>
                     <Link href="/team" className="text-base text-gray-600 hover:text-gray-900">
                       Team

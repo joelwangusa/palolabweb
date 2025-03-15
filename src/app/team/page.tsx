@@ -19,7 +19,7 @@ const teamMembers = [
     "name": "Joel Wong",
     "role": "Founder",
     "department": "Executive",
-    "bio": "Joel is an experienced tech leader specializing in deep learning, learning, NLP, LLM,  and large-scale system."
+    "bio": "Joel is an experienced tech leader specializing in deep learning, LLM, blokchain and large-scale system."
   },
   {
     "id": "2",

@@ -1,9 +1,10 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
-import AiAnalysisImage from "../../public/home_ai_analysis.png";
-import RealTimeProcessingImage from "../../public/home_real_time_processing.png";
-import AutomatedWorkflowImage from "../../public/home_automated_workflows.png";
+import RapidMVP from "../../public/rapidmvp.png"
+import QualifiedTeam from "../../public/qualifiedteam.png"
+import EnterpriseSolution from "../../public/enterprisesolution.png"
+
 
 export default async function Home() {
   // You can fetch data here using Next.js 15's async components
@@ -61,7 +62,7 @@ export default async function Home() {
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden">
               <Image
-                src={ AiAnalysisImage }
+                src={ RapidMVP }
                 alt="AI Analysis"
                 width={500}
                 height={300}
@@ -76,7 +77,7 @@ export default async function Home() {
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden bg-gray-100">
               <Image
-                src={ RealTimeProcessingImage }
+                src={ QualifiedTeam }
                 alt="Real-time Processing"
                 width={500}
                 height={300}
@@ -91,7 +92,7 @@ export default async function Home() {
           <div className="relative">
             <div className="h-[300px] rounded-2xl overflow-hidden">
               <Image
-                src={ AutomatedWorkflowImage }
+                src={ EnterpriseSolution }
                 alt="Automated Workflows"
                 width={500}
                 height={300}

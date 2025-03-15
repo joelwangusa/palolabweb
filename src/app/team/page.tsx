@@ -1,45 +1,63 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+
+// Team member type definition
+type TeamMember = {
+  id: string
+  name: string
+  role: string
+  department: string
+  bio: string
+}
 
 const teamMembers = [
   {
-    name: "Joe W.",
-    role: "CEO & Founder",
-    image: "/team_joe.png",
-    expertise: "Tech Lead & Machine Learning Engineer",
+    "id": "1",
+    "name": "Joel Wong",
+    "role": "Founder",
+    "department": "Executive",
+    "bio": "Joel is an experienced tech leader specializing in machine learning and AI strategy."
   },
   {
-    name: "Peter Z.",
-    role: "Senior App & Fullstack Engineer",
-    image: "/team_peter.png",
-    expertise: "Flutter, React, Node.js, Python, WebRTC",
+    "id": "2",
+    "name": "Peter Lee",
+    "role": "Senior App & Fullstack Engineer",
+    "department": "Engineering",
+    "bio": "Peter excels in mobile and web app development, leveraging Flutter, React, Node.js, Python, and WebRTC."
   },
   {
-    name: "Marco L.",
-    role: "Machine Learning & Fullstack Engineer",
-    image: "/team_marco.png",
-    expertise: "LLMs, DevOps, Kafka, RAG, VectorDB, WebRTC",
+    "id": "3",
+    "name": "Marco Leung",
+    "role": "Machine Learning & Fullstack Engineer",
+    "department": "Product",
+    "bio": "Marco specializes in large language models (LLMs), DevOps, Kafka, retrieval-augmented generation (RAG), VectorDB, and WebRTC."
   },
   {
-    name: "Emily Z",
-    role: "Senior Product Manager",
-    image: "/team_emily.png",
-    expertise: "Product Design, Data Analysis, Python",
+    "id": "4",
+    "name": "Emily Zhang",
+    "role": "Senior Product Manager",
+    "department": "Engineering",
+    "bio": "Emily combines expertise in product design and data analysis to guide innovative AI-driven products."
   },
   {
-    name: "Larry Y.",
-    role: "Senior Machine Learning Engineer",
-    image: "/team_larry.png",
-    expertise: "Machine Learning, LLMs, RAG, Python, Java",
+    "id": "5",
+    "name": "Larry Yang",
+    "role": "Senior Machine Learning Engineer",
+    "department": "Marketing",
+    "bio": "Larry utilizes advanced machine learning techniques to enhance data-driven marketing strategies."
   },
   {
-    name: "Andy S.",
-    role: "Senior Web Engineer",
-    image: "/team_larry.png",
-    expertise: "LLMs, NextJS/React, TailwindCSS, TypeScript",
-  },
+    "id": "6",
+    "name": "Andy Sun",
+    "role": "Senior Web Engineer",
+    "department": "Engineering",
+    "bio": "Andy is skilled in developing web applications using LLM integrations, NextJS/React, TailwindCSS, and TypeScript."
+  }
 ]
+
 
 export default function Team() {
   return (
@@ -78,26 +96,23 @@ export default function Team() {
         </div>
 
         {/* Team Grid */}
-        <div className="mt-32 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-          {teamMembers.map((person, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105"
-            >
-              <Image
-                className="w-full h-64 object-cover"
-                src={person.image || "/placeholder.svg"}
-                alt={person.name}
-                width={300}
-                height={200}
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900">{person.name}</h3>
-                <p className="text-blue-600">{person.role}</p>
-                <p className="mt-4 text-gray-600">{person.expertise}</p>
-              </div>
-            </div>
-          ))}
+        <div className="container py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {teamMembers.map((member) => (
+              <Card key={member.id} className="overflow-hidden">
+                <CardHeader>
+                  <Badge variant="outline" className="w-fit mb-2">
+                    {member.department}
+                  </Badge>
+                  <CardTitle>{member.name}</CardTitle>
+                  <CardDescription>{member.role}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">{member.bio}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
       {/* Call to Action */}

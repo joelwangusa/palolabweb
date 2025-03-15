@@ -17,7 +17,7 @@ const portfolioItems = [
     technologies: ["Shopify", "AI/ML", "3PL", "Payment", "Cryptocurrencies"],
   },
   {
-    title: "Multi-Cloud Solutions in USA",
+    title: "Multi-Cloud Solutions",
     description: "Designed and implemented robust, containerized multi-cloud solutions enhanced with advanced AIOps capabilities, reliably supporting applications with multi-million active users.",
     image: "/portfolio_multi_cloud_solutions.png",
     technologies: ["AWS", "GCP", "VPN", "Kubernetes", "AIOps"],

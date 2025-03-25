@@ -30,10 +30,10 @@ const teamMembers = [
   },
   {
     "id": "3",
-    "name": "Marco Leung",
+    "name": "Pax Leung",
     "role": "Machine Learning & Fullstack Engineer",
     "department": "Engineering",
-    "bio": "Marco specializes in large language models (LLMs), DevOps, Kafka, retrieval-augmented generation (RAG), VectorDB, and WebRTC."
+    "bio": "Pax specializes in large language models (LLMs), DevOps, Kafka, retrieval-augmented generation (RAG), VectorDB, and WebRTC."
   },
   {
     "id": "4",

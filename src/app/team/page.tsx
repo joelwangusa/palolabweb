@@ -16,7 +16,7 @@ type TeamMember = {
 const teamMembers = [
   {
     "id": "1",
-    "name": "Joel Wong",
+    "name": "Joel Wang",
     "role": "Founder",
     "department": "Executive",
     "bio": "Joel is an experienced tech leader specializing in deep learning, LLM, blokchain and large-scale system."
